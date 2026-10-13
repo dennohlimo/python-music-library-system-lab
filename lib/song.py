@@ -11,7 +11,7 @@ class Song:
         self.genre = genre
 
 
-        Song.add_song_to_count
+        Song.add_song_to_count()
         Song.add_to_genres(genre)
         Song.add_to_artists(artist)
         Song.add_to_genre_count(genre)
@@ -44,7 +44,7 @@ class Song:
 
     @classmethod
     def add_to_artists_count(cls, artist):
-        if artist in cls.artist_count:
-            cls.artist_count[artist] +=1
+        if artist in cls.artists_count:
+            cls.artists_count[artist] += 1
         else:
-            cls.artist_count[artist] = 1
+            cls.artists_count[artist] = 1
